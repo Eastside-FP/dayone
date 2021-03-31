@@ -21,14 +21,14 @@
 
 -- Part  1:
 -- change next line: add parentheses to make this equal "Functional"
-word1 = reverse "lanoi" ++ "tcnuF"    -- "++"concatenates concatenates strings
+word1 = reverse ("lanoi" ++ "tcnuF")    -- "++"concatenates concatenates strings
   
 
 incr n = n + 1 -- don't change this...
 
 -- Part 2:
 -- change next line to make equal 50
-fifty = incr 7 * 7
+fifty = incr (7 * 7) --just parentheses
 
 
 -- Part 3:
