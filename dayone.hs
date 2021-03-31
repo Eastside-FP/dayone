@@ -34,7 +34,7 @@ fifty = incr (7 * 7) --just parentheses
 -- Part 3:
 -- this function adds 2 to its parameter. Change it to use `incr`
 -- twice, rather than using `+ 2`
-add2 n = incr(incr(n)) --recursion but based
+add2 n = incr(incr n) --recursion but based
 
 -- Part 4:
 -- You could also write `add2` as:
