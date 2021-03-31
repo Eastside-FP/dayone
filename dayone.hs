@@ -21,20 +21,20 @@
 
 -- Part  1:
 -- change next line: add parentheses to make this equal "Functional"
-word1 = reverse "lanoi" ++ "tcnuF"    -- "++"concatenates concatenates strings
+word1 = reverse ("lanoi" ++ "tcnuF")    -- "++"concatenates concatenates strings
   
 
 incr n = n + 1 -- don't change this...
 
 -- Part 2:
 -- change next line to make equal 50
-fifty = incr 7 * 7
+fifty = incr (7 * 7)
 
 
 -- Part 3:
 -- this function adds 2 to its parameter. Change it to use `incr`
 -- twice, rather than using `+ 2`
-add2 n = n + 2
+add2 n = incr (incr n)
 
 
 -- Part 4:
@@ -42,7 +42,7 @@ add2 n = n + 2
 newAdd2 = incr . incr
 --
 -- Use the 'net to find out what the "." operator is called
--- and write it here: «your answer»
+-- and write it here: dot
 
 -- nothing to change below this line
 ------------------------------------------------------------------------------------------------
