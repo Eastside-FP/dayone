@@ -34,15 +34,15 @@ fifty = incr (7 * 7) --just parentheses
 -- Part 3:
 -- this function adds 2 to its parameter. Change it to use `incr`
 -- twice, rather than using `+ 2`
-add2 n = n + 2
-
+add2 n = incr(incr(n)) --recursion but based
 
 -- Part 4:
 -- You could also write `add2` as:
 newAdd2 = incr . incr
 --
 -- Use the 'net to find out what the "." operator is called
--- and write it here: «your answer»
+-- and write it here: 
+-- The "." operator allows you to chain functions by putting the output of the fnction to the right as the input of the function to the left. Less parentheses I guess.
 
 -- nothing to change below this line
 ------------------------------------------------------------------------------------------------
